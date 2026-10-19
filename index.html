@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff8f5">
+    <meta name="description" content="A little birthday surprise, made with love.">
+    <title>A Little Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="page">
+        <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+        <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+        <span class="sparkle sparkle-three" aria-hidden="true">✦</span>
+
+        <header class="site-header">
+            <a class="brand" href="#" aria-label="A little birthday surprise home">
+                <span class="brand-heart" aria-hidden="true">♥</span>
+                <span>made just for you</span>
+            </a>
+            <span class="header-note">a little moment of magic</span>
+        </header>
+
+        <main class="main-content">
+            <section class="birthday-card welcome-card" id="welcome" aria-labelledby="welcome-title">
+                <p class="eyebrow">✦ &nbsp; something special is waiting &nbsp; ✦</p>
+                <div class="cake" aria-hidden="true">💌</div>
+                <h1 id="welcome-title">A little <em>surprise</em><br>for you</h1>
+                <p class="intro">For someone who makes ordinary days feel a little more lovely. I made this just to remind you how very special you are.</p>
+                <div class="welcome-flourish" aria-hidden="true"><span></span>♡<span></span></div>
+                <button class="reveal-button" id="open-surprise" type="button">
+                    Open your surprise <span aria-hidden="true">→</span>
+                </button>
+                <p class="welcome-hint">A tiny birthday countdown, made with love</p>
+            </section>
+
+            <section class="birthday-card countdown-card" id="countdown-card" aria-labelledby="countdown-title" hidden>
+                <p class="eyebrow">a little something for <span id="recipient-name">my favorite person</span></p>
+                <div class="cake" aria-hidden="true">🎂</div>
+                <h1 id="countdown-title" tabindex="-1">Your day is<br><em>almost here</em></h1>
+                <p class="intro">The world got a little brighter the day you arrived. Here's to counting down to your next trip around the sun.</p>
+                <p class="date-label" id="birthday-date">Counting down to your birthday</p>
+
+                <div class="countdown" role="timer" aria-label="Time until the birthday">
+                    <div class="time-box"><span id="days">000</span><small>days</small></div>
+                    <span class="time-divider" aria-hidden="true">:</span>
+                    <div class="time-box"><span id="hours">00</span><small>hours</small></div>
+                    <span class="time-divider" aria-hidden="true">:</span>
+                    <div class="time-box"><span id="minutes">00</span><small>minutes</small></div>
+                    <span class="time-divider" aria-hidden="true">:</span>
+                    <div class="time-box"><span id="seconds">00</span><small>seconds</small></div>
+                </div>
+                <p class="countdown-caption" id="countdown-caption" aria-live="polite">Every second brings your lovely day closer.</p>
+
+                <div class="note-divider" aria-hidden="true"><span>♡</span></div>
+                <p class="note-kicker">a little reminder</p>
+                <p class="note-message" id="note-message">You make life softer, brighter, and so much more beautiful just by being you.</p>
+                <button class="note-button" id="note-button" type="button">A little more love, please</button>
+                <p class="signoff">With all my heart <span>♥</span></p>
+                <button class="back-button" id="back-button" type="button">← Back to your surprise</button>
+            </section>
+        </main>
+
+        <footer>
+            <span>made with love, just for you</span>
+            <span class="footer-heart" aria-hidden="true">♥</span>
+            <span>and a little bit of birthday magic</span>
+        </footer>
+    </div>
+</body>
+
+</html>
